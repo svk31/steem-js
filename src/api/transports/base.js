@@ -1,4 +1,3 @@
-import Promise from 'bluebird';
 import EventEmitter from 'events';
 
 export default class Transport extends EventEmitter {
@@ -27,7 +26,4 @@ export default class Transport extends EventEmitter {
   send() {}
   start() {}
   stop() {}
-
 }
-
-Promise.promisifyAll(Transport.prototype);
